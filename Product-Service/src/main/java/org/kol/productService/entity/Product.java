@@ -11,6 +11,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
+@Builder
 @Entity(name = "Product")
 public class Product {
 

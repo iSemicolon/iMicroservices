@@ -45,7 +45,7 @@ public class ProductController {
 
     //http://localhost:9090/product/fetch-all-products
     @GetMapping("/fetch-all-products")
-    public List<Product> getAllProduct() {
+    public List<Product> getAllProducts() {
 
         List<Product> productResponse = productService.findAllProducts();
 
@@ -55,7 +55,7 @@ public class ProductController {
 
     //http://localhost:9090/product/remove-product-by-id/52
     @DeleteMapping("remove-product-by-id/{Id}")
-    public String DeleteProductById(@PathVariable("Id") Long productId) {
+    public String deleteProductById(@PathVariable("Id") Long productId) {
 
         String deleteMsg = productService.DeleteOrder(productId);
 
